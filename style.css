@@ -14,23 +14,36 @@ body{
     background-color: black;
     background-image: url(img/space.png);
     height: 600px;
-    width: 800px;
+    width: 720px;
 
 }
 
 .game-instructions {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
     position: relative;
-    color: white;
-    left: 15rem;
+    color: #f70b0b;
+    left: 10rem;
     top: 0px;
 }
 
 .start-button {
+    font-family: 'VT323', monospace;
+    font-size: 25px;
     position: relative;
     color: white;
-    top: 9rem;
-    left: 15rem;
+    top: 3rem;
+    left: 7rem;
     cursor: pointer;
+    height: 100px;
+    width: 150px;
+    background-color: #aa4206;
+	border-radius: 50px;
+	margin-bottom: 1.3rem;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 }
 
@@ -56,7 +69,7 @@ body{
 
 .alien-transition {
     opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .dead-alien {
@@ -64,4 +77,13 @@ body{
     width: 70px;
     position: relative;
     opacity: 0;
+}
+
+.placar {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+ 
+    color: #f70b0b;
+    left: 10rem;
+    top: 0px;
 }

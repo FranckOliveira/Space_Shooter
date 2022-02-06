@@ -1,21 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>::Space Shooter::</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
+
+    <audio src="./sons/background_musica.mp3" loop></audio>
+    <button>Música</button>
+    <script>
+        const button = document.querySelector('button')
+        button.addEventListener('click', function () {
+            const audio = document.querySelector('audio')
+            audio.play()
+        })
+    </script>
+
+
 <body>
     <div id="main-play-area">
         <img class="player-shooter" src="./img/hero-ship.png" alt="hero">
         <h4 class="game-instructions">
-            Não deixe os inimigos invadirem o seu planeta!
+            Não deixe os aliens invadirem seu planeta!
         </h4>
         <div class="start-button">
-            <h1>START</h1>
+            <h2>START!</h2>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
+    <div class="placar" id="SCORE"></div>
+
 </body>
+
 </html>
